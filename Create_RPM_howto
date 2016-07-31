@@ -1,0 +1,5 @@
+yum install rpmdevtools rpm-build
+rpmdev-setuptree
+tar -cvzf csv-to-influxdb-{$VERSION}.tar.gz csv-to-influxdb-{$VERSION}
+cp csv-to-influxdb-0.1.tar.gz ~/rpmbuild/SOURCES/
+rpmbuild --bb rpmbuild/SPECS/csv-to-influxdb.spec
